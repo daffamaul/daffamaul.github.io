@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.container .main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  gap: 20px;
+}
+
+img[src*='logo'] {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+img[src*='kelas'] {
+  top: -10px;
+  right: 1000px;
+}
+
+img[src*='upb'] {
+  top: -10px;
+  right: 800px;
+}
+
+img[src*='me'] {
+  align-self: center;
+  border-radius: 10px 10px 10px 10px;
+  outline: black solid 1px;
+  padding: 10px;
+}
+
+.container .main .description {
+  padding: 25px;
+}
+
+.container .main .biodata {
+  border: 1px solid black;
+  align-self: center;
+  padding: 25px;
+}
+
+@media screen and (max-width: 320px) {
+  img[src*='logo'] {
+    top: 0px;
+    right: 0px;
+    width: 80px;
+    height: 80px;
+  }
+
+  img[src*='kelas'] {
+    right: 215px;
+    top: -90px;
+  }
+
+  img[src*='upb'] {
+    right: 25px;
+    top: -90px;
+  }
+
+  img[src*='me'] {
+    width: 250px;
+  }
+}

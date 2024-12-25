@@ -1,0 +1,8 @@
+img[src*='logo'] {
+  width: 100px;
+  height: 100px;
+}
+
+img[src*='me'] {
+  border-radius: 10px;
+}
